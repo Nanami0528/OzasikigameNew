@@ -217,8 +217,7 @@
         NSLog(@"奇数の時以外に、タップしてもアウト");
         [self presentGameoverVC];
     }
-    [self presentGameclearVC];
-}
+    }
 
 - (void)presentGameclearVC{
     //10回でクリア

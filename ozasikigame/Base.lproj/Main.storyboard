@@ -219,8 +219,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="おわん００.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkp-wq-4M6">
                                 <rect key="frame" x="105" y="216" width="109" height="92"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand001.png" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-Rj-VMi">
+                                <rect key="frame" x="89" y="20" width="131" height="174"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SC3-jl-LNa" userLabel="同時TapView">
+                                <rect key="frame" x="64" y="146" width="192" height="276"/>
+                                <color key="backgroundColor" red="0.73843286114785345" green="1" blue="0.65737588072750563" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFZ-aK-R6n">
-                                <rect key="frame" x="139" y="247" width="31" height="30"/>
+                                <rect key="frame" x="144" y="269" width="31" height="30"/>
                                 <state key="normal" title="start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -228,12 +235,13 @@
                                     <action selector="start" destination="rbh-eQ-tfM" eventType="touchUpInside" id="v9P-vO-u7B"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand001.png" translatesAutoresizingMaskIntoConstraints="NO" id="B5M-Rj-VMi">
-                                <rect key="frame" x="94" y="116" width="131" height="174"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand000.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pv4-8n-klu">
-                                <rect key="frame" x="28" y="116" width="240" height="174"/>
+                                <rect key="frame" x="24" y="0.0" width="240" height="174"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7Y-Wy-rMX" userLabel="TapView">
+                                <rect key="frame" x="97" y="430" width="196" height="111"/>
+                                <color key="backgroundColor" red="0.20085587360000001" green="0.41180734540000002" blue="0.28736427409999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -241,14 +249,16 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="gu" destination="Pv4-8n-klu" id="9Gm-MJ-JIX"/>
+                        <outlet property="multiTapView" destination="SC3-jl-LNa" id="X1A-Fr-5A4"/>
                         <outlet property="par" destination="B5M-Rj-VMi" id="dSH-q7-c0P"/>
                         <outlet property="red" destination="zkp-wq-4M6" id="DOG-mp-KzM"/>
                         <outlet property="startButton" destination="mFZ-aK-R6n" id="uAl-p8-jcW"/>
+                        <outlet property="tapView" destination="v7Y-Wy-rMX" id="MZu-zl-kL1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sX1-Zc-ezH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103" y="881"/>
+            <point key="canvasLocation" x="-227" y="868"/>
         </scene>
         <!--Gameover View Controller-->
         <scene sceneID="zgV-9q-t8P">

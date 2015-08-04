@@ -22,10 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
-    
-    
-    
 }
 
 -(IBAction)lavel1{
@@ -37,6 +33,7 @@
     [self presentViewController:mainVC animated:YES completion:nil];//YESならModal,Noなら何もなし
     
 };
+
 -(IBAction)lavel2{
     
     MainViewController *mainVC =  [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
@@ -64,10 +61,6 @@
     [self presentViewController:randomVC animated:YES completion:nil];//YESならModal,Noなら何もなし
     
 };
-
-
-
-
 
 
 - (void)didReceiveMemoryWarning {
